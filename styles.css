@@ -15,6 +15,11 @@ body{
     text-transform: lowercase;
     color: darkviolet;
   }
+  h4{
+    text-align: center;
+    text-transform: lowercase;
+    color: darkviolet;
+  }
 }
 .main{
   color:bisque;
