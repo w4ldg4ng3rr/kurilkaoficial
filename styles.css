@@ -1,0 +1,25 @@
+
+.fooder{
+  background-color: black;
+
+  h1{
+  text-align: center;
+  text-transform:uppercase;
+  color:blueviolet;
+  font:900;
+  }
+}
+.main{
+  color:bisque;
+}
+.main-1{
+  color:brown;
+}
+
+#hi{
+  color:yellowgreen;
+}
+
+div b{
+  color:palevioletred;
+}
