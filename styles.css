@@ -11,6 +11,12 @@ body{
   color:blueviolet;
   font:900;
   }
+  h2{
+    text-align: center;
+    text-transform: lowercase;
+    color: darkviolet;
+    font:500;
+  }
 }
 .main{
   color:bisque;
