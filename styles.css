@@ -7,6 +7,7 @@ body{
   height: fit-content;
 }
 .main{
+  font-family:'Courier New', Courier, monospace;
   text-align:center;
   text-decoration: dotted;
   color: darkviolet;
