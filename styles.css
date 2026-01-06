@@ -1,18 +1,102 @@
+@font-face {
+  font-family: 'CloisterBlackLight';
+  src: url(CloisterBlackLight.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root{
+  --main-color: blueviolet;
+  --sec-color: violet;
+  --bg-color: black;
+}
+
+
+.fooder{
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 10px black;
+  margin:0%;
+  border: 2px solid var(--main-color);
+  overflow: hidden;
+}
+
+/* classes that specifies objects' view of main header's row */
+.high-row{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  height: 220px;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-center{
+  text-align: center;
+  color: var(--main-color);
+  font-size: 100%;
+}
+.header-center .hat{
+  font-size: 3em;
+  font-family:'CloisterBlackLight', serif;
+  margin:0;
+  line-height: 1;
+}
+.material-icons.md36{
+  font-size: 45px;
+  vertical-align: middle;
+}
+.contentbutt{
+  display: flex;
+  background: none;
+  border:none;
+  height: fit-content;
+  width: fit-content;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.contentbutt:hover{
+  color:darken((--main-color),10%);
+  filter: brightness(0.8);
+}
+/* classes that specifies objects' view of second header's row */
+.low-row{
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+.low-row.is-open{
+
+  max-height: 500px;
+}
+.menu-list{
+  margin:0;
+  padding:20px 40px;
+  list-style:none;
+  border-top: 1px solid var(--main-color);
+}
+
+.menu-list li{
+  margin-bottom: 10px;
+}
+
+.menu-list li a{
+  text-decoration: none;
+  color: var(--sec-color);
+  font-size: 18 px;
+  display: block;
+  padding: 5px 0;
+}
+
 
 body{
-  background-color: black;
+  background-color: var(--bg-color);
+  margin: 0%;
 }
-.fooder{
-  background-color: black;
-  height: fit-content;
-}
-.main{
-  font-family:'Courier New', Courier, monospace;
-  text-align:center;
-  text-decoration: dotted;
-  color: darkviolet;
-  margin: auto;
-  }
 
 div img{
   display: block;
